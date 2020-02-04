@@ -1,24 +1,40 @@
 def new_hash
-  # return an empty hash
+  new_hash = {}
+  return new_hash
 end
 
 def my_hash
+  my_hash = {hi: "Mel"}
+  return my_hash
   # return a valid hash with any key/value pair of your choice
 end
 
 def pioneer
+  pioneer ={name: "Grace Hopper"}
+  return pioneer
   # return a hash with a key of :name and a corresponding value of 'Grace Hopper'
 end
 
 def id_generator
+  id_generator ={:id => 3}
+  return id_generator
   # return a hash with a key :id assigned to positive integer
 end
 
 def my_hash_creator(key, value)
+  
+ 
   # return a hash that includes the key and value parameters passed into this method
 end
 
-def read_from_hash(hash, key)
+def read_from_hash(hash,key)
+  hash = { :key => "value"}
+  if hash.include?("value")
+    return hash[:key]
+  else
+   return nil
+ end
+  
   # return the correct value using the hash and key parameters
 end
 
